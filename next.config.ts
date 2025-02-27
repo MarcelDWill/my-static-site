@@ -1,7 +1,11 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  output: "export", // Enables static export mode
+  images: {
+    unoptimized: true, // Required for Cloudflare Pages
+  },
 };
 
 export default nextConfig;
+

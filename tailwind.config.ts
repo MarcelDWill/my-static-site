@@ -16,3 +16,11 @@ export default {
   },
   plugins: [],
 } satisfies Config;
+module.exports = {
+  darkMode: "class", // Use 'class' for manual control or 'media' for system preference
+  content: ["./app/**/*.{js,ts,jsx,tsx}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};
