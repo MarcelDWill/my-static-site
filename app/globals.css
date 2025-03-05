@@ -18,7 +18,9 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow: hidden; /* ✅ Prevents scrolling */
+  /*overflow: hidden; *//* ✅ Prevents scrolling */
+  overflow-x: auto;  /* Allows scrolling only when necessary */
+  white-space: wrap; /* Prevents text from wrapping */
 }
 
 body {
@@ -30,5 +32,41 @@ body {
   align-items: center;
   justify-content: center; /* ✅ Centers everything properly */
   transition: background-color 0.3s ease-in-out;
+  text-align: center;
+  padding-top: 80px;
 }
 
+/* ✅ Style the scrollbar (for Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  height: 8px; /* Adjust scrollbar thickness */
+  scrollbar-width: thin;
+scrollbar-color: rgba(100, 100, 100, 0.5) rgba(50, 50, 50, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(100, 100, 100, 0.5); /* Scrollbar color */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(50, 50, 50, 0.2); /* Track color */
+}
+
+button {
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(0, 150, 255, 0.5);
+}
+
+input, textarea {
+  transition: all 0.3s ease-in-out;
+}
+
+input:focus, textarea:focus {
+  border-color: #3b82f6; /* Blue focus */
+  outline: none;
+  box-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
+}
