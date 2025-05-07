@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+
 export default function PortfolioPage() {
   return(
     <div className="relative w-screen h-screen flex flex-col items-center justify-center">
@@ -20,6 +21,9 @@ export default function PortfolioPage() {
           height={500}
           priority
         />
+        <p className="px-2 py-1 text-center text-black-900 dark:text-gray-300 bg-gray-700 bg-opacity-60 rounded-lg shadow-md mt-2">
+        Please visit my <a href="https://github.com/MarcelDWill" className="underline text-blue-400 hover:text-blue-200" target="_blank" rel="noopener noreferrer">Github</a> page for the time being.
+      </p>
       </main>
     </div>); 
 }

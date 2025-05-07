@@ -14,26 +14,30 @@ export default function AboutMe() {
         
         <h1 className="text-4xl font-bold">👤 About Me</h1>
         {/*<p className="text-lg">This is the &quot;About Me&quot; page.</p>*/}
-        <a>Aspiring Software Engineer | Full-Stack Developer | Problem Solver<br/>
+        <a>Software Engineer | Full-Stack Developer | Problem Solver<br/>
 <br/>
 
-<p>Hi, I’m Marcel Williams, a passionate and driven Software Engineer in Training with hands-on experience in full-stack web development. </p>
-<p>Currently, I’m sharpening my skills at Chegg Skills (Thinkful), where I build and deploy web applications using JavaScript, React, Node.js, and PostgreSQL. </p>
-<p>I thrive on solving complex problems, writing clean code, and continuously learning to stay ahead in the ever-evolving tech landscape.</p>
-<br/><br/>
+<p>Hi, I’m Marcel Williams — a Software Engineer in Training with full-stack experience and a strong drive to build scalable, real-world web applications.</p>
+  
+  <p>I’m currently enrolled in the Chegg Skills (Thinkful) Software Engineering program, where I’ve been sharpening my skills in full-stack JavaScript development, with a particular focus on the PERN stack (PostgreSQL, Express, React, Node.js). With a solid background in technical roles and systems analysis, I bring both practical problem-solving skills and a collaborative mindset to every project.</p>
+  
+  <p>Before transitioning into tech, I spent over a decade in field service and systems management roles at AT&T and TXU Electric Delivery, where I honed skills in technical troubleshooting, data analysis, and communication. These roles have shaped my ability to approach engineering tasks with a user-first, reliability-focused mindset.</p>
+
+  <br/><br/>
 💡 What I bring to the table:
 <ol className="pr-5 text-left">
-  <li>✅ Full-stack development experience with modern web technologies</li>
-  <li>✅ Strong problem-solving mindset, backed by real-world project development</li>
-  <li>✅ Ability to collaborate, troubleshoot, and implement best coding practices</li>
-  <li>✅ Background in technical roles at AT&T and TXU Electric Delivery, equipping me with analytical thinking and hands-on technical expertise</li>
-</ol><br/>
+    <li>✅ Full-stack development with JavaScript, React, Node.js, and PostgreSQL</li>
+    <li>✅ Strong backend API design with Express and SQL using Knex.js</li>
+    <li>✅ Responsive, component-based front-end UIs built with Tailwind CSS and Zustand</li>
+    <li>✅ Former tech lead experience, troubleshooting fiber networks and optimizing systems</li>
+    <li>✅ Continuous learner with hands-on training in agile development and test-driven coding</li>
+  </ol><br/>
 
  Recent Projects:
 <ol>
-  <li>🔹 Library Application – A book search & review platform using JavaScript ES6 and Node.js</li>
-  <li>🔹 Study Tool Application – A full-stack flashcard study app built with React, Express, and PostgreSQL</li>
-  <li>🔹 Responsive Web Application – A sleek, mobile-friendly website developed with HTML, CSS, and Flexbox</li>
+<li>🔹 <strong>PERN Stack Store</strong> – Full-stack e-commerce platform with user auth, API, and responsive design using Tailwind CSS</li>
+    <li>🔹 <strong>Study Tool App</strong> – Flashcard study application with spaced repetition using React, Node.js, and PostgreSQL</li>
+    <li>🔹 <strong>Library App</strong> – A book search and review platform developed with vanilla JS and Node.js</li>
 </ol><br/><br/>
 I’m excited about opportunities in software engineering, where I can contribute my skills and grow alongside talented professionals. Let’s connect and chat about tech, development, and career growth!
 
