@@ -1,0 +1,7 @@
+{
+  "name": "my-static-site",
+  "compatibility_date": "2024-09-23",
+  "assets": {
+    "directory": "./out"
+  }
+}
