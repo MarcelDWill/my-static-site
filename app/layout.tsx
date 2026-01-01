@@ -2,46 +2,36 @@
 
 import "./globals.css";
 import GlassmorphNavbar from "@/app/components/GlassmorphNavbar";
+import Background from "@/app/components/Background";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import Image from "next/image";
+import { Inter } from "next/font/google";
+
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const [navbarHeight, setNavbarHeight] = useState(0);
 
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className="min-h-screen bg-background font-sans antialiased relative">
+      <body className={`${inter.variable} font-sans min-h-screen text-foreground relative antialiased`}>
         
-        {/* ✅ Background Image (Global for All Pages) */}
-        <div className="fixed top-0 left-0 w-full h-full -z-10">
-          <div className="relative w-full h-full">
-            <Image
-              src="/BG2.png"
-              alt="Background"
-              fill
-              quality={100}
-              priority
-              className="object-cover"
-            />
-          </div>
-          {/* ✅ Dark Overlay with Reduced Darkness */}
-          <div className="absolute top-0 left-0 w-full h-full bg-black/20 dark:bg-black/50"></div>
-        </div>
+        {/* Modern Animated Background */}
+        <Background />
 
-        {/* ✅ Navbar with Dynamic Height */}
+        {/* Navbar */}
         <GlassmorphNavbar setNavbarHeight={setNavbarHeight} />
 
-        {/* ✅ Content Area with Page Transition Effect */}
+        {/* Content Area with Page Transition */}
         <AnimatePresence mode="wait"> 
           <motion.div
             key={typeof window !== "undefined" ? window.location.pathname : ""}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.5 }}
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            transition={{ duration: 0.4, ease: "easeOut" }}
             style={{ paddingTop: navbarHeight }}
-            className="relative w-full"
+            className="relative w-full z-10"
           >
             {children}
           </motion.div>

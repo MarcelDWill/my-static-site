@@ -1,48 +1,91 @@
+"use client";
+import React from "react";
+import { motion } from "framer-motion";
+import { Code, Layers, PenTool, Wrench } from "lucide-react";
 
 export default function AboutMe() {
   return (
-    <div className="relative w-screen h-screen flex flex-col items-center justify-center px-6"
-         style={{ paddingTop: "150px" }}>
-          {/*<Image 
-            src="/techbg1.png"
-            alt="Background"
-            fill
-            quality={100}
-            className="absolute top-0 left-0 w-full h-full object-cover -z-10 transition-all duration-500 dark:opacity-70"
-          />*/}
-      <div className="relative w-full max-w-4xl flex flex-col items-center justify-center p-6 rounded-lg bg-gray-700/50 dark:bg-gray-800/50 shadow-lg">
-        
-        <h1 className="text-4xl font-bold">👤 About Me</h1>
-        {/*<p className="text-lg">This is the &quot;About Me&quot; page.</p>*/}
-        <a>Software Engineer | Full-Stack Developer | Problem Solver<br/>
-<br/>
+    <div className="flex min-h-[calc(100vh-80px)] items-center justify-center p-4">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        className="glass relative w-full max-w-4xl rounded-[2rem] p-8 md:p-12 overflow-hidden text-white"
+      >
+         {/* Decorative background glow inside card */}
+         <div className="absolute top-0 right-0 w-3/4 h-3/4 bg-purple-500/10 blur-[80px] rounded-full pointer-events-none" />
 
-<p>Hi, I’m Marcel Williams — a Software Engineer in Training with full-stack experience and a strong drive to build scalable, real-world web applications.</p>
-  
-  <p>I’m currently enrolled in the Chegg Skills (Thinkful) Software Engineering program, where I’ve been sharpening my skills in full-stack JavaScript development, with a particular focus on the PERN stack (PostgreSQL, Express, React, Node.js). With a solid background in technical roles and systems analysis, I bring both practical problem-solving skills and a collaborative mindset to every project.</p>
-  
-  <p>Before transitioning into tech, I spent over a decade in field service and systems management roles at AT&T and TXU Electric Delivery, where I honed skills in technical troubleshooting, data analysis, and communication. These roles have shaped my ability to approach engineering tasks with a user-first, reliability-focused mindset.</p>
+        {/* Headline */}
+        <h1 className="relative z-10 mb-6 text-3xl font-bold leading-tight md:text-5xl">
+          Engineering Experiences at the <br className="hidden md:block" />
+          <span className="text-gradient">Intersection of Code and Creativity</span>
+        </h1>
 
-  <br/><br/>
-💡 What I bring to the table:
-<ol className="pr-5 text-left">
-    <li>✅ Full-stack development with JavaScript, React, Node.js, and PostgreSQL</li>
-    <li>✅ Strong backend API design with Express and SQL using Knex.js</li>
-    <li>✅ Responsive, component-based front-end UIs built with Tailwind CSS and Zustand</li>
-    <li>✅ Former tech lead experience, troubleshooting fiber networks and optimizing systems</li>
-    <li>✅ Continuous learner with hands-on training in agile development and test-driven coding</li>
-  </ol><br/>
+        {/* Intro */}
+        <div className="relative z-10 space-y-6 text-base md:text-lg text-gray-200 leading-relaxed">
+          <p>
+            Hi, I’m <strong>Marcel Williams</strong>. I am a Front-End Developer and Computer Science student dedicated to building digital environments that feel as good as they function. With a professional background in technical systems support and a certificate in Software Engineering, I specialize in creating high-performance, accessible web applications using the <strong>PERN stack</strong>.
+          </p>
 
- Recent Projects:
-<ol>
-<li>🔹 <strong>PERN Stack Store</strong> – Full-stack e-commerce platform with user auth, API, and responsive design using Tailwind CSS</li>
-    <li>🔹 <strong>Study Tool App</strong> – Flashcard study application with spaced repetition using React, Node.js, and PostgreSQL</li>
-    <li>🔹 <strong>Library App</strong> – A book search and review platform developed with vanilla JS and Node.js</li>
-</ol><br/><br/>
-I’m excited about opportunities in software engineering, where I can contribute my skills and grow alongside talented professionals. Let’s connect and chat about tech, development, and career growth!
+          <hr className="border-white/10" />
 
-</a>
-</div>
-      </div>
-    );
+          {/* Technical Creative Edge */}
+          <div>
+            <h2 className="mb-2 text-xl font-semibold text-blue-300">The Technical Creative Edge</h2>
+            <p>
+              Beyond standard full-stack development, I am a "Technical Creative." I don't just build websites; I build interactive ecosystems. Whether I'm developing a custom audio engine for my own folk and RnB projects or engineering a randomized narrative generator for my upcoming novel, I use my CS background to turn static content into immersive fan experiences.
+            </p>
+          </div>
+
+          {/* What I Bring to the Table */}
+          <div>
+             <h2 className="mb-4 text-xl font-semibold text-blue-300">What I Bring to the Table:</h2>
+             <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <li className="flex items-start gap-3 bg-white/5 p-4 rounded-xl border border-white/5 hover:bg-white/10 transition-colors">
+                    <Code className="w-6 h-6 text-blue-400 shrink-0" />
+                    <div>
+                        <strong className="block text-white mb-1">Modern Front-End Mastery</strong>
+                        <span className="text-sm text-gray-400">Building responsive, accessible UIs with React, Next.js, and Tailwind CSS.</span>
+                    </div>
+                </li>
+                <li className="flex items-start gap-3 bg-white/5 p-4 rounded-xl border border-white/5 hover:bg-white/10 transition-colors">
+                    <Layers className="w-6 h-6 text-purple-400 shrink-0" />
+                    <div>
+                        <strong className="block text-white mb-1">Full-Stack Architecture</strong>
+                        <span className="text-sm text-gray-400">Designing robust REST APIs and PostgreSQL database structures to power complex user journeys.</span>
+                    </div>
+                </li>
+                <li className="flex items-start gap-3 bg-white/5 p-4 rounded-xl border border-white/5 hover:bg-white/10 transition-colors">
+                    <PenTool className="w-6 h-6 text-pink-400 shrink-0" />
+                    <div>
+                        <strong className="block text-white mb-1">Design-to-Code Fluency</strong>
+                        <span className="text-sm text-gray-400">Bridging the gap between vision and reality using Figma, Adobe Suite, and clean, semantic code.</span>
+                    </div>
+                </li>
+                <li className="flex items-start gap-3 bg-white/5 p-4 rounded-xl border border-white/5 hover:bg-white/10 transition-colors">
+                    <Wrench className="w-6 h-6 text-yellow-400 shrink-0" />
+                    <div>
+                        <strong className="block text-white mb-1">Strategic Troubleshooting</strong>
+                        <span className="text-sm text-gray-400">Over a decade of experience in field service and systems management, ensuring every project is built for reliability and scale.</span>
+                    </div>
+                </li>
+             </ul>
+          </div>
+
+           {/* Currently Exploring */}
+           <div>
+            <h2 className="mb-2 text-xl font-semibold text-blue-300">Currently Exploring</h2>
+            <p>
+              I am currently pursuing my B.S. in Computer Science while developing AI-driven tools for indie artists. I am looking for opportunities where I can apply my engineering skills to help creators own their digital space.
+            </p>
+          </div>
+          
+          <p className="text-xl font-medium italic text-center pt-4 text-gradient">
+            "Let's build something that moves the needle."
+          </p>
+
+        </div>
+      </motion.div>
+    </div>
+  );
 }

@@ -5,68 +5,81 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --glass-border: rgba(255, 255, 255, 0.2);
+  --glass-bg: rgba(255, 255, 255, 0.1);
+  --glass-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #050505;
     --foreground: #ededed;
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --glass-bg: rgba(0, 0, 0, 0.4);
+    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   }
 }
 
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  /*overflow: hidden; *//* ✅ Prevents scrolling */
-  overflow-x: auto;  /* Allows scrolling only when necessary */
-  white-space: wrap; /* Prevents text from wrapping */
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; /* ✅ Centers everything properly */
-  transition: background-color 0.3s ease-in-out;
-  text-align: center;
-  padding-top: 80px;
+  background: transparent;
+  /* Allows fixed Background component to show */
+  font-family: var(--font-inter), Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* ✅ Style the scrollbar (for Chrome, Edge, Safari) */
+/* Scrollbar Styling */
 ::-webkit-scrollbar {
-  height: 8px; /* Adjust scrollbar thickness */
-  scrollbar-width: thin;
-scrollbar-color: rgba(100, 100, 100, 0.5) rgba(50, 50, 50, 0.2);
-}
-
-::-webkit-scrollbar-thumb {
-  background: rgba(100, 100, 100, 0.5); /* Scrollbar color */
-  border-radius: 4px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(50, 50, 50, 0.2); /* Track color */
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(100, 100, 100, 0.4);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 100, 100, 0.7);
+}
+
+@layer utilities {
+  .glass {
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
+  }
+
+  .text-gradient {
+    background: linear-gradient(to right, #60a5fa, #a855f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
 button {
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-button:hover {
-  transform: scale(1.05);
-  box-shadow: 0px 4px 10px rgba(0, 150, 255, 0.5);
+button:active {
+  transform: scale(0.95);
 }
 
-input, textarea {
-  transition: all 0.3s ease-in-out;
-}
-
-input:focus, textarea:focus {
-  border-color: #3b82f6; /* Blue focus */
+input:focus,
+textarea:focus {
   outline: none;
-  box-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
+  ring: 2px;
+  ring-color: #3b82f6;
 }
