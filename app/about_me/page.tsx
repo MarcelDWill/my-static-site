@@ -33,7 +33,7 @@ export default function AboutMe() {
           <div>
             <h2 className="mb-2 text-xl font-semibold text-blue-300">The Technical Creative Edge</h2>
             <p>
-              Beyond standard full-stack development, I am a "Technical Creative." I don't just build websites; I build interactive ecosystems. Whether I'm developing a custom audio engine for my own folk and RnB projects or engineering a randomized narrative generator for my upcoming novel, I use my CS background to turn static content into immersive fan experiences.
+              Beyond standard full-stack development, I am a &quot;Technical Creative.&quot; I don&apos;t just build websites; I build interactive ecosystems. Whether I&apos;m developing a custom audio engine for my own folk and RnB projects or engineering a randomized narrative generator for my upcoming novel, I use my CS background to turn static content into immersive fan experiences.
             </p>
           </div>
 
@@ -81,7 +81,7 @@ export default function AboutMe() {
           </div>
           
           <p className="text-xl font-medium italic text-center pt-4 text-gradient">
-            "Let's build something that moves the needle."
+            &quot;Let&apos;s build something that moves the needle.&quot;
           </p>
 
         </div>

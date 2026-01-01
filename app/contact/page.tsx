@@ -178,10 +178,10 @@ ${formData.message}
                 <div>
                   <label className="block text-sm font-semibold mb-2 ml-1 flex items-center gap-2">
                     <PenTool className="w-4 h-4 text-purple-400" />
-                    The Creative "Hook"
+                    The Creative &quot;Hook&quot;
                   </label>
                   <p className="text-xs text-gray-500 dark:text-gray-400 mb-2 ml-1">
-                    In one sentence, what is the 'vibe' of your work? (e.g., Gritty Outlaw Country, Sleek RnB, Mystery Fiction)
+                    In one sentence, what is the &apos;vibe&apos; of your work? (e.g., Gritty Outlaw Country, Sleek RnB, Mystery Fiction)
                   </p>
                   <input
                     type="text"
@@ -321,7 +321,7 @@ ${formData.message}
             </div>
             <h2 className="text-2xl font-bold mb-2">Inquiry Received!</h2>
             <p className="text-gray-600 dark:text-gray-300 max-w-sm">
-              Thanks for reaching out. I'll review your vision and get back to you shortly to discuss next steps.
+              Thanks for reaching out. I&apos;ll review your vision and get back to you shortly to discuss next steps.
             </p>
             <button 
                 onClick={() => setSubmitted(false)}
