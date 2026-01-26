@@ -61,7 +61,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               cursor: 'pointer'
             }}
           >
-            💬 Chat with Marcel's Assistant
+            💬 Chat with Marcel&apos;s Assistant
           </button>
         </div>            {/* Page Content */}
             {children}
