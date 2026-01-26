@@ -22,7 +22,7 @@ export default function AboutMe() {
         </h1>
 
         {/* Intro */}
-        <div className="relative z-10 space-y-6 text-base md:text-lg text-gray-200 leading-relaxed">
+        <div className="relative z-10 space-y-6 text-base md:text-lg text-black leading-relaxed">
           <p>
             Hi, I’m <strong>Marcel Williams</strong>. I am a Front-End Developer and Computer Science student dedicated to building digital environments that feel as good as they function. With a professional background in technical systems support and a certificate in Software Engineering, I specialize in creating high-performance, accessible web applications using the <strong>PERN stack</strong>.
           </p>
@@ -31,7 +31,7 @@ export default function AboutMe() {
 
           {/* Technical Creative Edge */}
           <div>
-            <h2 className="mb-2 text-xl font-semibold text-blue-300">The Technical Creative Edge</h2>
+            <h2 className="mb-2 text-xl font-semibold text-blue-500">The Technical Creative Edge</h2>
             <p>
               Beyond standard full-stack development, I am a &quot;Technical Creative.&quot; I don&apos;t just build websites; I build interactive ecosystems. Whether I&apos;m developing a custom audio engine for my own folk and RnB projects or engineering a randomized narrative generator for my upcoming novel, I use my CS background to turn static content into immersive fan experiences.
             </p>
@@ -39,34 +39,34 @@ export default function AboutMe() {
 
           {/* What I Bring to the Table */}
           <div>
-             <h2 className="mb-4 text-xl font-semibold text-blue-300">What I Bring to the Table:</h2>
+             <h2 className="mb-4 text-xl font-semibold text-blue-500">What I Bring to the Table:</h2>
              <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <li className="flex items-start gap-3 bg-white/5 p-4 rounded-xl border border-white/5 hover:bg-white/10 transition-colors">
                     <Code className="w-6 h-6 text-blue-400 shrink-0" />
                     <div>
                         <strong className="block text-white mb-1">Modern Front-End Mastery</strong>
-                        <span className="text-sm text-gray-400">Building responsive, accessible UIs with React, Next.js, and Tailwind CSS.</span>
+                        <span className="text-sm text-gray-900">Building responsive, accessible UIs with React, Next.js, and Tailwind CSS.</span>
                     </div>
                 </li>
                 <li className="flex items-start gap-3 bg-white/5 p-4 rounded-xl border border-white/5 hover:bg-white/10 transition-colors">
                     <Layers className="w-6 h-6 text-purple-400 shrink-0" />
                     <div>
                         <strong className="block text-white mb-1">Full-Stack Architecture</strong>
-                        <span className="text-sm text-gray-400">Designing robust REST APIs and PostgreSQL database structures to power complex user journeys.</span>
+                        <span className="text-sm text-gray-900">Designing robust REST APIs and PostgreSQL database structures to power complex user journeys.</span>
                     </div>
                 </li>
                 <li className="flex items-start gap-3 bg-white/5 p-4 rounded-xl border border-white/5 hover:bg-white/10 transition-colors">
                     <PenTool className="w-6 h-6 text-pink-400 shrink-0" />
                     <div>
                         <strong className="block text-white mb-1">Design-to-Code Fluency</strong>
-                        <span className="text-sm text-gray-400">Bridging the gap between vision and reality using Figma, Adobe Suite, and clean, semantic code.</span>
+                        <span className="text-sm text-gray-900">Bridging the gap between vision and reality using Figma, Adobe Suite, and clean, semantic code.</span>
                     </div>
                 </li>
                 <li className="flex items-start gap-3 bg-white/5 p-4 rounded-xl border border-white/5 hover:bg-white/10 transition-colors">
                     <Wrench className="w-6 h-6 text-yellow-400 shrink-0" />
                     <div>
                         <strong className="block text-white mb-1">Strategic Troubleshooting</strong>
-                        <span className="text-sm text-gray-400">Over a decade of experience in field service and systems management, ensuring every project is built for reliability and scale.</span>
+                        <span className="text-sm text-gray-900">Over a decade of experience in field service and systems management, ensuring every project is built for reliability and scale.</span>
                     </div>
                 </li>
              </ul>
@@ -74,7 +74,7 @@ export default function AboutMe() {
 
            {/* Currently Exploring */}
            <div>
-            <h2 className="mb-2 text-xl font-semibold text-blue-300">Currently Exploring</h2>
+            <h2 className="mb-2 text-xl font-semibold text-blue-600">Currently Exploring</h2>
             <p>
               I am currently pursuing my B.S. in Computer Science while developing AI-driven tools for indie artists. I am looking for opportunities where I can apply my engineering skills to help creators own their digital space.
             </p>

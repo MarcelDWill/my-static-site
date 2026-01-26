@@ -33,6 +33,37 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             style={{ paddingTop: navbarHeight }}
             className="relative w-full z-10"
           >
+
+        {/* --- AI Assistant iFrame Container --- */}
+        <div 
+          style={{
+            position: 'fixed',
+            bottom: '20px',
+            right: '20px',
+            zIndex: 9999,
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'flex-end'
+          }}
+        >
+          
+
+          <button 
+            onClick={() => window.open('https://opal.google/?flow=drive:/1_Tg0b_hsY0gV1uRBqR9QDYIbUTX__AVd&mode=app', '_blank')}
+            style={{
+              position: 'fixed',
+              bottom: '20px',
+              right: '20px',
+              padding: '12px 24px',
+              borderRadius: '50px',
+              backgroundColor: '#000',
+              color: '#fff',
+              cursor: 'pointer'
+            }}
+          >
+            💬 Chat with Marcel's Assistant
+          </button>
+        </div>            {/* Page Content */}
             {children}
           </motion.div>
         </AnimatePresence>
