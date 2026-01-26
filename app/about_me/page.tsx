@@ -22,7 +22,7 @@ export default function AboutMe() {
         </h1>
 
         {/* Intro */}
-        <div className="relative z-10 space-y-6 text-base md:text-lg text-black leading-relaxed">
+        <div className="relative z-10 space-y-6 text-base md:text-lg text-gray-200 leading-relaxed">
           <p>
             Hi, I’m <strong>Marcel Williams</strong>. I am a Front-End Developer and Computer Science student dedicated to building digital environments that feel as good as they function. With a professional background in technical systems support and a certificate in Software Engineering, I specialize in creating high-performance, accessible web applications using the <strong>PERN stack</strong>.
           </p>
@@ -45,28 +45,28 @@ export default function AboutMe() {
                     <Code className="w-6 h-6 text-blue-400 shrink-0" />
                     <div>
                         <strong className="block text-white mb-1">Modern Front-End Mastery</strong>
-                        <span className="text-sm text-gray-900">Building responsive, accessible UIs with React, Next.js, and Tailwind CSS.</span>
+                        <span className="text-sm text-gray-300">Building responsive, accessible UIs with React, Next.js, and Tailwind CSS.</span>
                     </div>
                 </li>
                 <li className="flex items-start gap-3 bg-white/5 p-4 rounded-xl border border-white/5 hover:bg-white/10 transition-colors">
                     <Layers className="w-6 h-6 text-purple-400 shrink-0" />
                     <div>
                         <strong className="block text-white mb-1">Full-Stack Architecture</strong>
-                        <span className="text-sm text-gray-900">Designing robust REST APIs and PostgreSQL database structures to power complex user journeys.</span>
+                        <span className="text-sm text-gray-300">Designing robust REST APIs and PostgreSQL database structures to power complex user journeys.</span>
                     </div>
                 </li>
                 <li className="flex items-start gap-3 bg-white/5 p-4 rounded-xl border border-white/5 hover:bg-white/10 transition-colors">
                     <PenTool className="w-6 h-6 text-pink-400 shrink-0" />
                     <div>
                         <strong className="block text-white mb-1">Design-to-Code Fluency</strong>
-                        <span className="text-sm text-gray-900">Bridging the gap between vision and reality using Figma, Adobe Suite, and clean, semantic code.</span>
+                        <span className="text-sm text-gray-300">Bridging the gap between vision and reality using Figma, Adobe Suite, and clean, semantic code.</span>
                     </div>
                 </li>
                 <li className="flex items-start gap-3 bg-white/5 p-4 rounded-xl border border-white/5 hover:bg-white/10 transition-colors">
                     <Wrench className="w-6 h-6 text-yellow-400 shrink-0" />
                     <div>
                         <strong className="block text-white mb-1">Strategic Troubleshooting</strong>
-                        <span className="text-sm text-gray-900">Over a decade of experience in field service and systems management, ensuring every project is built for reliability and scale.</span>
+                        <span className="text-sm text-gray-300">Over a decade of experience in field service and systems management, ensuring every project is built for reliability and scale.</span>
                     </div>
                 </li>
              </ul>
