@@ -77,7 +77,17 @@ export default function HiddenPage() {
         <h1 className="text-4xl font-bold text-white drop-shadow-lg">
           Welcome to the Hidden Page!
         </h1>
-        <p className="text-lg text-white">You entered the correct key.</p>
+        <p className="text-lg text-white mb-6">You entered the correct key.</p>
+        
+        <button 
+          onClick={() => {
+            localStorage.removeItem("isAuthorized");
+            window.location.reload();
+          }}
+          className="px-6 py-2 bg-red-600 hover:bg-red-700 text-white rounded-full transition-all shadow-lg"
+        >
+          🔒 Lock Page
+        </button>
       </div>
     </div>
   );

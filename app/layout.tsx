@@ -4,13 +4,17 @@ import "./globals.css";
 import GlassmorphNavbar from "@/app/components/GlassmorphNavbar";
 import Background from "@/app/components/Background";
 import { useState } from "react";
+import { usePathname, useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { Inter } from "next/font/google";
+import { Key } from "lucide-react";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const [navbarHeight, setNavbarHeight] = useState(0);
+  const pathname = usePathname();
+  const router = useRouter();
 
   return (
     <html lang="en" suppressHydrationWarning>
@@ -18,6 +22,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         
         {/* Modern Animated Background */}
         <Background />
+
+        {/* Secret Button (Only visible on Portfolio Page) */}
+        {pathname === "/portfolio" && (
+           <button 
+             onClick={() => router.push("/hidden")}
+             className="fixed top-6 left-6 p-2 z-[9999] opacity-10 hover:opacity-100 transition-opacity duration-300 text-white cursor-pointer"
+             aria-label="Secret Path"
+           >
+             <Key size={32} />
+           </button>
+        )}
 
         {/* Navbar */}
         <GlassmorphNavbar setNavbarHeight={setNavbarHeight} />
