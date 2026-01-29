@@ -63,8 +63,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         >
           
 
-          <button 
-            onClick={() => window.open('https://opal.google/?flow=drive:/1Mbdu-yTebn3eypSLvvNNxrrjBZ6jFEtt&shared&mode=app', '_blank')}
+          {/*<button 
+            onClick={() => window.open('https://opal.google/app/1_Tg0b_hsY0gV1uRBqR9QDYIbUTX__AVd', '_blank')}
             style={{
               position: 'fixed',
               bottom: '20px',
@@ -77,7 +77,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             }}
           >
             💬 Chat with Marcel&apos;s Assistant
-          </button>
+          </button>*/}
         </div>            {/* Page Content */}
             {children}
           </motion.div>
