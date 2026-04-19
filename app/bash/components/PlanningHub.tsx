@@ -81,7 +81,7 @@ export default function PlanningHub() {
               <option value="">Select an option...</option>
               <option value="valid">✅ I have a valid passport</option>
               <option value="expired">🕰️ My passport is expired</option>
-              <option value="none">❌ I dont have a passport yet</option>
+              <option value="none">❌ I don&apos;t have a passport yet</option>
               <option value="renewing">⏳ I am currently renewing/applying</option>
             </select>
           </div>
