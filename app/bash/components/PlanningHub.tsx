@@ -61,7 +61,7 @@ export default function PlanningHub() {
       {/* Signup Form Card */}
       <div className="glass bg-white/80 dark:bg-gray-800/80 p-8 rounded-[2rem] shadow-xl md:col-span-2">
         <h3 className="text-2xl font-bold mb-4 text-orange-600 dark:text-orange-400">📝 RSVP & Signup</h3>
-        <p className="text-gray-600 dark:text-gray-300 mb-6">Let us know if you{'\''}re coming and any special requirements.</p>
+        <p className="text-gray-600 dark:text-gray-300 mb-6">Let us know if you&apos;re coming and any special requirements.</p>
         <form className="space-y-5" onSubmit={submitForm}>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             <div className="space-y-1">
@@ -81,7 +81,7 @@ export default function PlanningHub() {
               <option value="">Select an option...</option>
               <option value="valid">✅ I have a valid passport</option>
               <option value="expired">🕰️ My passport is expired</option>
-              <option value="none">❌ I don{'\''}t have a passport yet</option>
+              <option value="none">❌ I dont have a passport yet</option>
               <option value="renewing">⏳ I am currently renewing/applying</option>
             </select>
           </div>
