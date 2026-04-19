@@ -29,7 +29,7 @@ export default function BashLayout({ children }: { children: React.ReactNode }) 
             </h1>
             
             <p className="text-xl md:text-2xl text-gray-200 font-light mb-8 italic drop-shadow-sm">
-              `&apos;`A birthday trip worth the stamp in your passport`&apos;`
+              A birthday trip worth the stamp in your passport
             </p>
             
             <div className="bg-white/10 backdrop-blur-md rounded-2xl px-8 py-6 border border-white/20 shadow-inner w-full md:w-auto mb-8">
@@ -56,7 +56,7 @@ export default function BashLayout({ children }: { children: React.ReactNode }) 
             {/* Call to Action Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 w-full md:w-auto justify-center">
                <Link href="/bash" className="px-8 py-4 bg-gradient-to-r from-red-600 to-orange-500 hover:from-red-500 hover:to-orange-400 text-white font-bold rounded-full shadow-[0_0_15px_rgba(255,100,100,0.5)] transition-all hover:scale-105 text-lg">
-                 `&apos;`Im Interested`&apos;`
+                 Im Interested
                </Link>
                <Link href="/bash/final-guide" className="px-8 py-4 bg-white/10 hover:bg-white/20 border border-white/30 text-white font-bold rounded-full transition-all hover:scale-105 text-lg backdrop-blur-sm">
                  See Trip Details
