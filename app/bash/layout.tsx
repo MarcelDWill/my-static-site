@@ -29,7 +29,7 @@ export default function BashLayout({ children }: { children: React.ReactNode }) 
             </h1>
             
             <p className="text-xl md:text-2xl text-gray-200 font-light mb-8 italic drop-shadow-sm">
-              &quot;A birthday trip worth the stamp in your passport`&quot;`
+              `&apos;`A birthday trip worth the stamp in your passport`&apos;`
             </p>
             
             <div className="bg-white/10 backdrop-blur-md rounded-2xl px-8 py-6 border border-white/20 shadow-inner w-full md:w-auto mb-8">
