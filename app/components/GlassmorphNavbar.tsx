@@ -24,15 +24,20 @@ export default function GlassmorphNavbar({ setNavbarHeight }: { setNavbarHeight:
 
   useEffect(() => {
     const storedTheme = localStorage.getItem("theme");
-    // Default to dark if no theme set, or check system pref
-    if (storedTheme === "dark" || (!storedTheme && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+    
+    // Force dark mode on Bash pages
+    if (pathname.startsWith("/bash")) {
+      document.documentElement.classList.add("dark");
+      setIsDark(true);
+      localStorage.setItem("theme", "dark");
+    } else if (storedTheme === "dark" || (!storedTheme && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
       document.documentElement.classList.add("dark");
       setIsDark(true);
     } else {
       document.documentElement.classList.remove("dark");
       setIsDark(false);
     }
-  }, []);
+  }, [pathname]);
 
   const toggleDarkMode = () => {
     const newTheme = isDark ? "light" : "dark";
@@ -92,6 +97,21 @@ export default function GlassmorphNavbar({ setNavbarHeight }: { setNavbarHeight:
                 {item.title}
               </Link>
             ))}
+            
+            {/* Link to Bash page */}
+            <Link 
+              href="/bash"
+              className="ml-6 flex items-center hover:scale-110 transition-transform duration-300"
+              title="Bash"
+            >
+              <Image 
+                src="/JPN2.png" 
+                alt="Bash path" 
+                width={54} 
+                height={54} 
+                className="object-contain" 
+              />
+            </Link>
           </div>
         </div>
 
