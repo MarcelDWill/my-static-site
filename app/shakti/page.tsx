@@ -73,7 +73,7 @@ export default function ShaktiPage() {
 
           <div className="mt-12 max-w-2xl mx-auto border-t border-gray-200 dark:border-gray-700 pt-8">
              <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 font-medium leading-relaxed tracking-wide px-4 mb-6">
-               &quot;I wasn&apos;t sure what to say. Hi. I don&apos;t want to come off too strong or weird. Its hard for me to say stuff differently to you. I want a way for you to be in my life. And honestly* or candidly, thinking about you evokes a strong emotional response. If you want mdwilliams326@gmail.com or 3174966590.&quot;
+               &quot;I wasn&apos;t sure what to say. Hi. I don&apos;t want to come off too strong or weird. Let me apologize for coming out of nowhere sending you a cactus and we havent spoken in almost 30years. As a psychatrist you may understand. You are registered in my brain as a safe space, my only safe space. Once again I apologize. If you want mdwilliams326@gmail.com or 3174966590.&quot;
              </p>
              <p className="text-sm md:text-base text-gray-500 dark:text-gray-400 italic px-4">
                PS * = I don&apos;t really like the phrase &quot;can I be honest&quot;
