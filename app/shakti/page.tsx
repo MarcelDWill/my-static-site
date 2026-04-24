@@ -106,7 +106,20 @@ export default function ShaktiPage() {
                 Be well and happy. I wonder if you&apos;ll ever read this and if you still like your PS&apos;s.
              </p>
              <p className="text-sm md:text-base text-gray-500 dark:text-gray-400 italic px-4">
-
+              042426 I think Ill make this into an online journal or like a one sided conversation with you or the memory of. 
+              Life is hard right now and i think i just wanted a friend to talk to. 
+              Divorce is hard and the people I do talk to are married. I guess I feel shame and embarassment. 
+              Like I would be judged. I didn't think you would and exercised poor impulse control. 
+              I wanted to reach out and at least have you as a friend over the years but I was too scared, 
+              wondered if I could handle talking to the married you knowing how I felt. 
+              I still dont know if that was the right call. I had convinced myself of things "I just knew", 
+              but was just dumb. I know Im depressed and my actions are problematic. 
+              I know I am lonely and right now I can feel the tears right below the surface. 
+              I think I was looking for a place or person that i knew no matter what would bring me joy. 
+              Yeah its easier to imagine talking to you. 
+              Its putting this on the web for the world to see but no one will. 
+              It'll probably last longer than me. Maybe I'll put up more of the songs inspired by you. 
+              Well until the next time.
              </p>
              <p className="text-sm md:text-base text-gray-500 dark:text-gray-400 italic px-4">
                PPPS Happy belated birthday x30 or is it 29
