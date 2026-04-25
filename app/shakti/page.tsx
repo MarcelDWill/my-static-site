@@ -75,7 +75,7 @@ export default function ShaktiPage() {
 
           <div className="mt-12 max-w-2xl mx-auto border-t border-gray-200 dark:border-gray-700 pt-8">
              <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 font-medium leading-relaxed tracking-wide px-4 mb-6">
-               Hi Shubi, its been some time. It'd be nice to chat. If you want mdwilliams326@gmail.com or 3174966590.&quot;
+               Hi Shubi, its been some time. Itd be nice to chat. If you want mdwilliams326@gmail.com or 3174966590.
              </p>
              
           </div>
