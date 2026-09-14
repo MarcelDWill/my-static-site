@@ -1,14 +1,12 @@
 // Shared submission helper for all Bash planning forms.
 //
-// Everything posts to the same Google Apps Script Web App endpoint that
-// already powers the RSVP form. Each payload carries a `type` field
-// (e.g. "rsvp", "dateVote", "cityVote", "activityVote", "flightSighting",
-// "idea") so the Apps Script can route rows into separate sheet tabs
-// (see the Google Sheets restructuring described on the planning page).
-// Until that routing is added on the Apps Script side, everything will
-// land in whatever sheet/tab the script currently writes to.
+// Everything posts to the "Bash: Japan 2027 Planning" Google Apps Script
+// Web App endpoint. Each payload carries a `type` field (e.g. "rsvp",
+// "dateVote", "cityAndActivityVote", "flightSighting", "cardTable",
+// "birthdayEventIdea") which the Apps Script uses to route rows into
+// separate sheet tabs.
 const SHEET_ENDPOINT =
-  "https://script.google.com/macros/s/AKfycbySHGSNkMecioGPFd5d4OoAA20bEkLVoEDpaq4pKf8daVbFcTRXLIawAWK5mUB5EttGkQ/exec";
+  "https://script.google.com/macros/s/AKfycby5o73twop7ZHzc3uJtMYERmSk4MFUyfBxeCsdp2-fQMgFRPW9G0S2X7mVHJ_1oa2Xqzw/exec";
 
 export async function submitToSheet(
   type: string,
