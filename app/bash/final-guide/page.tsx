@@ -1,6 +1,6 @@
 import React from "react";
-import TravelGuide from "../components/TravelGuide";
+import ComingSoon from "../components/ComingSoon";
 
 export default function FinalGuidePage() {
-  return <TravelGuide />;
+  return <ComingSoon />;
 }
